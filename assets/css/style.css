@@ -21,3 +21,10 @@ body {
     padding: 25px 15px;
     transform: .3s;
 }
+.sidebar-header {
+    height: 75px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    margin-bottom: 30px;
+}
