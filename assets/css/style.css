@@ -8,3 +8,7 @@ body {
     background-color: #f4f6f8;
     color: #333;
 }
+.dashboard {
+  min-height: 100vh; 
+  display: flex;
+}
