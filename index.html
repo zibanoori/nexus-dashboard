@@ -3,88 +3,107 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nexus</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Nexus Dashboard</title>
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
     <div class="dashboard">
       <aside class="sidebar" id="sidebar">
         <div class="sidebar-header">
           <div class="logo">
-            <span class="logo-icon">🌟</span>
-            <span class="logo-test">Admin Pro</span>
+            <i class="fa-solid fa-star logo-icon"></i>
+            <span class="logo-text">Admin Pro</span>
           </div>
         </div>
         <nav class="sidebar-nav">
-          <a href="javascript:void(0)" class="nav-links active">
-            <span class="icon">🏡</span>
+          <a href="#" class="nav-links active">
+            <i class="fa-solid fa-house icon"></i>
             <span class="link-text">Dashboard</span>
           </a>
-          <a href="javascript:void(0)" class="nav-links">
-            <span class="icon">🛒</span>
+          <a href="#" class="nav-links">
+            <i class="fa-solid fa-users icon"></i>
             <span class="link-text">Users</span>
           </a>
-          <a href="javascript:void(0)" class="nav-links">
-            <span class="icon">📦</span>
-            <span class="link-text">Producta</span>
+          <a href="#" class="nav-links">
+            <i class="fa-solid fa-box-open icon"></i>
+            <span class="link-text">Products</span>
           </a>
-          <a href="javascript:void(0)" class="nav-links">
-            <span class="icon">📊</span>
-            <span class="link-text">Analitics</span>
+          <a href="#" class="nav-links">
+            <i class="fa-solid fa-chart-line icon"></i>
+            <span class="link-text">Analytics</span>
           </a>
-          <a href="javascript:void(0)" class="nav-links">
-            <span class="icon">⚙️</span>
+          <a href="#" class="nav-links">
+            <i class="fa-solid fa-gear icon"></i>
             <span class="link-text">Settings</span>
           </a>
         </nav>
-        <button id="sidebar-toggle" class="sidebar-toggle">⬅️</button>
+        <button id="sidebar-toggle" class="sidebar-toggle">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
       </aside>
+
       <div class="main">
         <header class="header">
           <div>
             <h1>Admin Area</h1>
-            <p>Welcome back Admin!</p>
+            <p>Welcome back, Admin!</p>
           </div>
           <div class="profile">
             <div class="avatar">A</div>
-            <span>Admin</span>
+            <span>Admin User</span>
           </div>
         </header>
 
         <main class="content">
           <div class="cards">
             <div class="stat-card">
-              <span class="stat-icon">💰</span>
+              <div class="icon-box blue">
+                <i class="fa-solid fa-sack-dollar"></i>
+              </div>
               <div>
                 <p>Total Revenue</p>
-                <h2>16000$</h2>
+                <h2>$16,000</h2>
               </div>
             </div>
             <div class="stat-card">
-              <span class="stat-icon">👥</span>
+              <div class="icon-box purple">
+                <i class="fa-solid fa-users"></i>
+              </div>
               <div>
                 <p>Total Users</p>
-                <h2>69500</h2>
+                <h2>69,500</h2>
               </div>
             </div>
             <div class="stat-card">
-              <span class="stat-icon">📦</span>
+              <div class="icon-box orange">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </div>
               <div>
                 <p>Total Orders</p>
-                <h2>1800</h2>
+                <h2>1,800</h2>
               </div>
             </div>
             <div class="stat-card">
-              <span class="stat-icon">👁️</span>
+              <div class="icon-box green">
+                <i class="fa-solid fa-eye"></i>
+              </div>
               <div>
                 <p>Page Views</p>
                 <h2>12.5k</h2>
               </div>
             </div>
           </div>
-          <section class="Welcome">
+
+          <section class="welcome-section">
             <h2>Welcome to Admin Pro!</h2>
-            <p>Here is your daily activity summary and key performance metrics</p>
+            <p>
+              Here is your daily activity summary and key performance metrics.
+            </p>
           </section>
         </main>
       </div>
