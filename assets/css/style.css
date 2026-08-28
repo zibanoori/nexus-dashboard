@@ -8,28 +8,34 @@
 body {
   background-color: #f4f6f8;
   color: #333;
+  overflow-x: hidden; 
 }
 
 .dashboard {
   min-height: 100vh;
   display: flex;
+  position: relative;
 }
 
-/* --- Sidebar Styles --- */
 .sidebar {
   width: 260px;
   background-color: #1e293b;
   color: #ffffff;
   padding: 20px;
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .sidebar.collapsed {
-  width: 80px;
+  width: 0;
+  padding: 0;
+  opacity: 0; 
+  pointer-events: none;
 }
 
 .sidebar-header {
@@ -45,17 +51,11 @@ body {
   gap: 12px;
   font-size: 1.3rem;
   font-weight: bold;
-  white-space: nowrap;
 }
 
 .logo-icon {
   color: #fbbf24;
   font-size: 1.5rem;
-}
-
-.sidebar.collapsed .logo-text {
-  opacity: 0;
-  pointer-events: none;
 }
 
 .nav-links {
@@ -68,7 +68,6 @@ body {
   border-radius: 8px;
   transition: 0.3s;
   margin-bottom: 5px;
-  white-space: nowrap;
 }
 
 .nav-links:hover,
@@ -83,31 +82,41 @@ body {
 }
 
 .sidebar-toggle {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  background: #334155;
+  position: fixed;
+  bottom: 30px;
+  left: 280px;
+  background: #1e293b;
   border: none;
   color: white;
-  width: 35px;
-  height: 35px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: 0.3s;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  font-size: 1.1rem;
+}
+
+.sidebar.collapsed ~ .sidebar-toggle {
+  left: 20px;
+  background: #334155;
+  transform: rotate(180deg);
 }
 
 .sidebar-toggle:hover {
+  transform: scale(1.1);
   background: #475569;
 }
 
-/* --- Main Content Styles --- */
 .main {
   flex: 1;
   padding: 30px;
-  transition: 0.3s;
+  transition: margin-left 0.3s ease;
+  width: 100%;
 }
 
 .header {
@@ -135,7 +144,6 @@ body {
   font-weight: bold;
 }
 
-/* --- Cards Section --- */
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
