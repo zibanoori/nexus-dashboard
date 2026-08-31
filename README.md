@@ -36,6 +36,8 @@ nexus/
 │       └── main.js         # Sidebar toggle logic
 ├── index.html              # Main entry point
 └── README.md
+```
 
 ---
+
 Made with ❤️ by Ziba Noori
