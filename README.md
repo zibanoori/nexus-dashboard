@@ -1,4 +1,4 @@
-# 🌟 Nexus Dashboard
+# 🌟 Nexus
 
 A clean, modern, and responsive admin dashboard built with pure HTML, CSS, and JavaScript. Features a fully collapsible sidebar with smooth animations and a beautiful card-based layout.
 
@@ -21,14 +21,14 @@ A clean, modern, and responsive admin dashboard built with pure HTML, CSS, and J
 
 1.  Clone the repository:
     ```bash
-    git clone https://github.com/zibanoori/nexus-dashboard.git
+    git clone https://github.com/zibanoori/nexus.git
     ```
 2.  Open `index.html` in your browser.
 
 ## 📂 Project Structure
 
 ```text
-nexus-dashboard/
+nexus/
 ├── assets/
 │   ├── css/
 │   │   └── style.css       # Main styles and animations
@@ -37,4 +37,5 @@ nexus-dashboard/
 ├── index.html              # Main entry point
 └── README.md
 
+---
 Made with ❤️ by Ziba Noori
